@@ -1,0 +1,116 @@
+/* hamburger */
+hamb
+{
+    position: absolute;
+    top: 50%;
+    right: 6px;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 28px;
+    height: 32px;
+    margin: -16px 0;
+    padding: 16px 6px;
+
+    cursor: pointer;
+}
+
+hamb
+{
+    right: 6px;
+}
+hamb.left
+{
+    left: 6px;
+}
+
+hamb line,
+hamb line:before,
+hamb line:after
+{
+    position: absolute;
+
+    display: block;
+
+    width: 15px;
+    height: 2px;
+
+    content: '';
+    cursor: pointer;
+
+    border-radius: 1px;
+}
+hamb.left line,
+hamb.left line:before,
+hamb.left line:after
+{
+    right: 0;
+}
+hamb.light line,
+hamb.light line:before,
+hamb.light line:after
+{
+    background: #fff;
+}
+hamb.dark line,
+hamb.dark line:before,
+hamb.dark line:after
+{
+    background: #000;
+}
+hamb line:before
+{
+    top: -5px;
+}
+hamb line:after
+{
+    bottom: -5px;
+}
+
+hamb line,
+hamb line:before,
+hamb line:after
+{
+    transition: all 300ms ease-in-out;
+}
+.active_hamb hamb line
+{
+    transform: rotate(-180deg);
+}
+.active_hamb hamb.left line
+{
+    transform: rotate(180deg);
+}
+.active_hamb hamb line:before,
+.active_hamb hamb line:after
+{
+    width: 10px;
+}
+.active_hamb hamb line:before
+{
+    top: -4px;
+
+    transform: rotate(-45deg);
+}
+.active_hamb hamb line:after
+{
+    bottom: -4px;
+
+    transform: rotate(45deg);
+}
+
+.active_hamb hamb.left line:before
+{
+    top: -4px;
+    right: 0;
+
+    transform: rotate(45deg);
+}
+.active_hamb hamb.left line:after
+{
+    right: 0;
+    bottom: -4px;
+
+    transform: rotate(-45deg);
+}
