@@ -13,10 +13,9 @@ body
 
 body *
 {
-    box-sizing: border-box;
-
-    --moz-box-sizing: border-box;
-    --webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body > *,
 layout > *
@@ -50,8 +49,9 @@ layout header
     right: 0;
     left: 0;
 
+    overflow: hidden;
+
     height: 40px;
-    overflow:hidden;
     padding: 0 40px;
 
     text-align: center;
@@ -76,34 +76,9 @@ layout aside.right
     right: 0;
     bottom: 0;
 
-    width: 0;
-
-    -webkit-transition: all .5s ease-out .5s;
-       -moz-transition: all .5s ease-out .5s;
-         -o-transition: all .5s ease-out .5s;
-            transition: all .5s ease-out .5s;
-
-    color: #fff;
-    background: #999;
-    background: rgba(0,0,0,.6);
-}
-
-
-
-layout aside.right
-{
-    top: 40px;
-    right: 0;
-    bottom: 0;
-
     overflow: hidden;
 
     width: 0;
-
-    -webkit-transition: all .5s ease-out .5s;
-       -moz-transition: all .5s ease-out .5s;
-         -o-transition: all .5s ease-out .5s;
-            transition: all .5s ease-out .5s;
 
     color: #fff;
     background: #444;

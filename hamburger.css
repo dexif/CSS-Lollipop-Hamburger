@@ -70,7 +70,8 @@ hamb line:after
 
 hamb line,
 hamb line:before,
-hamb line:after
+hamb line:after,
+.hamb_animated
 {
     transition: all 300ms ease-in-out;
 }
