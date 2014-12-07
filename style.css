@@ -51,6 +51,8 @@ layout header
     left: 0;
 
     height: 40px;
+    overflow:hidden;
+    padding: 0 40px;
 
     text-align: center;
 
