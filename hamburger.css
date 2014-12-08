@@ -77,11 +77,19 @@ hamb line:after,
 }
 .active_hamb hamb line
 {
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+       -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+         -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
 }
 .active_hamb hamb.left line
 {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 .active_hamb hamb line:before,
 .active_hamb hamb line:after
@@ -92,13 +100,21 @@ hamb line:after,
 {
     top: -4px;
 
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 .active_hamb hamb line:after
 {
     bottom: -4px;
 
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .active_hamb hamb.left line:before
@@ -106,12 +122,20 @@ hamb line:after,
     top: -4px;
     right: 0;
 
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .active_hamb hamb.left line:after
 {
     right: 0;
     bottom: -4px;
 
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
